@@ -10,7 +10,7 @@ Background: In the digital age, email and text messaging are essential communica
 
 Objective: The primary objective of this project is to develop an AI-powered spam classifier that can accurately distinguish between spam and non-spam messages in emails or text messages. The goal is to reduce the number of false positives (classifying legitimate messages as spam) and false negatives (missing actual spam messages) while achieving a high level of accuracy.
 
-2. Scope
+2.Scope
 
 This project's scope includes the following key steps:
 
@@ -26,8 +26,8 @@ Evaluation: We will measure the model's performance using appropriate metrics, i
 
 Iterative Improvement: To enhance the model's performance, we will engage in an iterative process of fine-tuning the model and experimenting with hyperparameters. This iterative approach allows us to continually improve the classifier's accuracy and effectiveness in identifying spam messages.
 
-3. Conclusion
+3.Conclusion
 This project aims to develop a robust AI-powered spam classifier to alleviate the problem of spam messages in email and text communications. By following a systematic approach of data collection, preprocessing, feature extraction, model selection, and iterative improvement, we intend to provide users with a highly accurate and reliable spam filter for their messages.
 
-4. Future Work
+4.Future Work
 In the future, we can explore additional techniques such as natural language processing (NLP) and advanced deep learning architectures to further improve the spam classifier's performance. Additionally, continuous monitoring and updates to the model will be essential to adapt to evolving spam patterns and tactics.
