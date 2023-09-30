@@ -1,4 +1,4 @@
- NMproject
+# NMproject
 AI-Powered Spam Classifier
 Problem Statement: 
 The problem is to build an AI-powered spam classifier that can accurately
