@@ -1,0 +1,68 @@
+AI  POWERED SPAM CLASSIFIER
+
+PHASE - 4
+
+
+
+DATASET : spam.csv
+
+Algorithm used: MultinomialNB
+
+The model is trained using the training data.
+
+The model's performance is evaluated  by 
+
+•	calculating accuracy
+
+•	generating a confusion matrix
+
+•	creating a classification report.
+
+Source code : Development part-2
+
+import pandas as pd
+
+from sklearn.model_selection import train_test_split
+
+from sklearn.feature_extraction.text import CountVectorizer
+
+from sklearn.naive_bayes import MultinomialNB
+
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
+
+data = pd.read_csv('spam.csv')  
+
+X = data['text']  
+
+y = data['label']  
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+vectorizer = CountVectorizer()
+
+X_train_vectorized = vectorizer.fit_transform(X_train)
+
+X_test_vectorized = vectorizer.transform(X_test)
+
+classifier = MultinomialNB()
+
+classifier.fit(X_train_vectorized, y_train)
+
+y_pred = classifier.predict(X_test_vectorized)
+
+accuracy = accuracy_score(y_test, y_pred)
+
+confusion = confusion_matrix(y_test, y_pred)
+
+classification_report_str = classification_report(y_test, y_pred)
+
+print(f"Accuracy: {accuracy}")
+
+print("Confusion Matrix:")
+
+print(confusion)
+
+print("Classification Report:")
+
+print(classification_report_str)
+
